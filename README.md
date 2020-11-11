@@ -1,6 +1,6 @@
 
 
-# Advantages of keeping data history instead of overwriting
+# Using Supplemental Logging 
 
 #
 #
@@ -21,9 +21,17 @@ ID FIRSTNAME LASTNAME MARITAL EDUCATION JOBTITLE POSTCODE ADDRESS               
 
 
 Then imagine that **kate** got divorced so an update is executed against the  row where **'id = 1' ** to update her lastname and her marital_status.
-
+If Supplemental logging is not on then the update statement will be logged into the database as below:
 ``` 
 "update contact_details set lastname = 'hunt' , marital_status = 'single' where id = 1" 
+
+```
+
+Then imagine that **kate** got divorced so an update is executed against the  row where **'id = 1' ** to update her lastname and her marital_status.
+If Supplemental logging is on all the columns then the update statement will be logged into the database as below:
+``` 
+"update contact_details set lastname = 'hunt' , marital_status = 'single' , education ='accountan' , jobtitle = = 'manager ' , 
+ postcode = 3178, address= '372 burwood hwy,glenwaverly' , updated_time = '2018-08-02-15'  where id = 1" 
 
 ```
 

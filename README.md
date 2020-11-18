@@ -48,6 +48,7 @@ sql stored in DB RedoLogs:
 So we updated the lastname and marital_status fields of the row. Now the data in the table in our system looks like:
 
 ```
+```
 ID FIRSTNAME LASTNAME MARITAL EDUCATION JOBTITLE POSTCODE ADDRESS                     UPDATED_TIME 
 -- --------- -------- ------- --------- -------- -------- --------------------------- -------------
 1  kate      hunt     single  accountant manager  3178    372 burwood hwy,glenwaverly 2018-08-02-15
@@ -63,6 +64,7 @@ So this little example shows how enabling supplemental logging will help to reco
 ``` 
 
 The cleanser comes and strips all and reconstruct a row like below:
+
 ```
 ID FIRSTNAME LASTNAME MARITAL EDUCATION  JOBTITLE POSTCODE          ADDRESS            UPDATED_TIME 
 1  kate      hunt     single  accountant manager  3178     372 burwood hwy,glenwaverly 2018-08-02-15

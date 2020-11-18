@@ -44,10 +44,11 @@ sql stored in DB RedoLogs:
 
 "update contact_details set lastname = 'hunt' , marital_status = 'single' where id = 1 and education ='accountant' and jobtitle = 'manager ' and
  postcode = 3178 and  address= '372 burwood hwy,glenwaverly' and  updated_time = '2018-08-02-15' and ROWID = 'AAAQQ3AABAAAYN5AAA'" 
+```
 
 So we updated the lastname and marital_status fields of the row. Now the data in the table in our system looks like:
 
-```
+
 ```
 ID FIRSTNAME LASTNAME MARITAL EDUCATION JOBTITLE POSTCODE ADDRESS                     UPDATED_TIME 
 -- --------- -------- ------- --------- -------- -------- --------------------------- -------------
@@ -59,9 +60,9 @@ ID FIRSTNAME LASTNAME MARITAL EDUCATION JOBTITLE POSTCODE ADDRESS               
 
 ```
 
-```
+
 So this little example shows how enabling supplemental logging will help to record additional information in the database logs that can enable us to reconstruct records affected by UPDATES even though only a few columns are updated. 
-``` 
+
 
 The cleanser comes and strips all and reconstruct a row like below:
 

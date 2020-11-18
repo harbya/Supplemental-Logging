@@ -26,7 +26,7 @@ If Supplemental logging is not on then the update statement will be logged into 
 Actual SQL :
 "update contact_details set lastname = 'hunt' , marital_status = 'single' where id = 1" 
 
-How will be stored in DB:
+How sql will be stored in DB:
 "update contact_details set lastname = 'hunt' , marital_status = 'single' where id = 1 and ROWID = 'AAAQQ3AABAAAYN5AAB'" 
 ```
 
@@ -36,7 +36,7 @@ If Supplemental logging is on all the columns then the update statement will be 
 Actual SQL :
 "update contact_details set lastname = 'hunt' , marital_status = 'single' where id = 1" 
 
-How will be stored in DB:
+How sql will be stored in DB:
 "update contact_details set lastname = 'hunt' , marital_status = 'single' where id = 1 and education ='accountant' and jobtitle = 'manager ' and
  postcode = 3178 and  address= '372 burwood hwy,glenwaverly' and  updated_time = '2018-08-02-15' and ROWID = 'AAAQQ3AABAAAYN5AAA'" 
 

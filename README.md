@@ -33,6 +33,12 @@ If Supplemental logging is on all the columns then the update statement will be 
 "update contact_details set lastname = 'hunt' , marital_status = 'single' , education ='accountant' , jobtitle = = 'manager ' , 
  postcode = 3178, address= '372 burwood hwy,glenwaverly' , updated_time = '2018-08-02-15'  where id = 1" 
 
+
+
+update "CUSTOMER" set "LASTNAME" = 'hunt', "MARITAL" = 'single' where "ID" = '1' and "FIRSTNAME" = 'Kate' and "LASTNAME" = 'smith' and "MARITAL" = 'married' and "EDUCATION" = 'accoun      tant' and
+50976  "JOBTITLE" = 'manager' and "POSTCODE" = '3178' and "ADDRESS" = '372 burwood hwy,glenwaverly' and "UPDATED_TIME" = '2018-08-02-15' and ROWID = 'AAAQQ3AABAAAYN5AAA';                                 
+50977 update "CUSTOMER" set "LASTNAME" = 'smith', "MARITAL" = 'married' where "ID" = '1' and "FIRSTNAME" = 'Kate' and "LASTNAME" = 'hunt' and "MARITAL" = 'single' and "EDUCATION" = 'accoun      tant' and
+50978  "JOBTITLE" = 'manager' and "POSTCODE" = '3178' and "ADDRESS" = '372 burwood hwy,glenwaverly' and "UPDATED_TIME" = '2018-08-02-15' and ROWID = 'AAAQQ3AABAAAYN5AAA';  
 ```
 
 So we updated the lastname and marital_status fields of the row. Now the data in the table in our system looks like:

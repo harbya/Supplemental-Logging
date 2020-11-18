@@ -49,7 +49,8 @@ ID FIRSTNAME LASTNAME MARITAL EDUCATION JOBTITLE POSTCODE ADDRESS               
 So this little example shows how enabling supplemental logging will help to record additional information in the database logs that can enable us to reconstruct records affected by UPDATES even though only a few columns are updated. 
 
 ``` 
-
+```
 The cleanser comes and strips all and reconstruct a row like below:
-
-1 kate hunt single accountant manager 3178 372 burwood hwy,glenwaverly 2018-08-02-15
+ID FIRSTNAME LASTNAME MARITAL EDUCATION  JOBTITLE POSTCODE          ADDRESS            UPDATED_TIME 
+1  kate      hunt     single  accountant manager  3178     372 burwood hwy,glenwaverly 2018-08-02-15
+```

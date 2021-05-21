@@ -1,6 +1,6 @@
 
 
-# Enbling Supplemental Logging 
+# Enabling Supplemental Logging 
 
 #
 #
